@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+</head>
+<body>
+    <p class = "cl"></p>
+
+
+
+    <script>
+        var p = document.querySelector(".cl");
+        
+        function fun() {
+            var sum = 0;
+            for(let i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+
+        var op = fun(10, 10, 10, 10);
+        p.innerHTML = op;
+
+    </script>
+
+
+</body>
+</html>
